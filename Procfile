@@ -1,4 +1,5 @@
-web: bash -lc "php artisan config:clear && php artisan cache:clear && php artisan config:cache && php -S 0.0.0.0:${PORT} -t public"
+web: php artisan config:clear && php artisan config:cache && php artisan serve --host=0.0.0.0 --port=$PORT
+
 
 
 
